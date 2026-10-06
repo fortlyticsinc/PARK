@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.landing-reveal {
+  animation: landing-rise 700ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@keyframes landing-rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .landing-reveal { animation: none; }
+}
+
+.landing-dark [class*="bg-[#f6f4ed]"] { background-color: #111712 !important; }
+.landing-dark [class*="bg-[#eeefe6]"] { background-color: #151e18 !important; }
+.landing-dark [class*="bg-[#fffefa]"] { background-color: #1a241d !important; }
+.landing-dark [class*="bg-[#faf9f4]"],
+.landing-dark [class*="bg-[#fcfbf7]"] { background-color: #19221b !important; }
+.landing-dark [class*="bg-[#f8f8f1]"],
+.landing-dark [class*="bg-[#f2f5ed]"] { background-color: #202b22 !important; }
+.landing-dark [class*="bg-[#edf1e8]"],
+.landing-dark [class*="bg-[#f0f3eb]"] { background-color: #293a2e !important; }
+.landing-dark [class*="bg-[#e7eadf]"],
+.landing-dark [class*="bg-[#dfe7d8]"] { background-color: #405943 !important; }
+.landing-dark [class*="bg-[#365b43]"] { background-color: #668363 !important; }
+.landing-dark [class*="bg-[#355640]"] { background-color: #20382a !important; }
+.landing-dark [class*="bg-[#f5f3e9]"] { background-color: #dce6d5 !important; }
+.landing-dark [class*="hover:bg-[#294a35]"]:hover { background-color: #789470 !important; }
+.landing-dark [class*="hover:bg-[#ebeee5]"]:hover { background-color: #293a2e !important; }
+.landing-dark [class*="border-[#e3e3d9]"],
+.landing-dark [class*="border-[#e2e3da]"],
+.landing-dark [class*="border-[#dcdfd5]"],
+.landing-dark [class*="border-[#dfe1d7]"],
+.landing-dark [class*="border-[#d8ddd1]"],
+.landing-dark [class*="border-[#e5e7df]"],
+.landing-dark [class*="border-[#dedfd6]"],
+.landing-dark [class*="border-[#d5dbd0]"],
+.landing-dark [class*="border-[#d5dfd2]"],
+.landing-dark [class*="border-[#d9ddd2]"],
+.landing-dark [class*="border-[#e2e4dc]"],
+.landing-dark [class*="border-[#d7ddd2]"],
+.landing-dark [class*="border-[#cfd7cb]"] { border-color: #344238 !important; }
+.landing-dark [class*="text-[#213d2e]"],
+.landing-dark [class*="text-[#253f30]"],
+.landing-dark [class*="text-[#264b3a]"],
+.landing-dark [class*="text-[#263f32]"],
+.landing-dark [class*="text-[#304b39]"],
+.landing-dark [class*="text-[#2c4937]"],
+.landing-dark [class*="text-[#334a39]"] { color: #e8ece3 !important; }
+.landing-dark [class*="text-[#667166]"],
+.landing-dark [class*="text-[#687369]"],
+.landing-dark [class*="text-[#69766a]"],
+.landing-dark [class*="text-[#748075]"],
+.landing-dark [class*="text-[#758075]"],
+.landing-dark [class*="text-[#768075]"],
+.landing-dark [class*="text-[#778177]"],
+.landing-dark [class*="text-[#7a8479]"],
+.landing-dark [class*="text-[#818a80]"],
+.landing-dark [class*="text-[#869087]"],
+.landing-dark [class*="text-[#8a9387]"],
+.landing-dark [class*="text-[#8b9288]"],
+.landing-dark [class*="text-[#92988e]"],
+.landing-dark [class*="text-[#92988f]"],
+.landing-dark [class*="text-[#859086]"] { color: #a8b2a6 !important; }
+.landing-dark [class*="text-[#71866c]"],
+.landing-dark [class*="text-[#91a18b]"],
+.landing-dark [class*="text-[#56745c]"],
+.landing-dark [class*="text-[#315540]"],
+.landing-dark [class*="text-[#526356]"],
+.landing-dark [class*="text-[#526d57]"],
+.landing-dark [class*="text-[#405d48]"],
+.landing-dark [class*="text-[#405847]"],
+.landing-dark [class*="text-[#405a47]"],
+.landing-dark [class*="text-[#526254]"],
+.landing-dark [class*="text-[#4e5d50]"],
+.landing-dark [class*="text-[#59695b]"],
+.landing-dark [class*="text-[#52715c]"],
+.landing-dark [class*="text-[#4c604f]"] { color: #b9cda9 !important; }
+.landing-dark [class*="hover:text-[#284c36]"]:hover,
+.landing-dark [class*="hover:text-[#315540]"]:hover { color: #d7e6ca !important; }
+.landing-dark button[class*="bg-[#365b43]"],
+.landing-dark button[class*="bg-[#668363]"] { background-color: #668363 !important; color: #ffffff !important; }
+.landing-dark button[class*="bg-[#365b43]"]:hover,
+.landing-dark button[class*="bg-[#668363]"]:hover { background-color: #789470 !important; }
+.landing-dark button[class*="bg-[#1a241d]"] { background-color: #1a241d !important; color: #dce6d6 !important; }
+.landing-dark button[class*="bg-[#f5f3e9]"] { background-color: #dce6d5 !important; color: #213d2e !important; }
+
+html.light body {
+  background: #f1f4f2;
+  color: #23312d;
+}
+
+html.light [class*="bg-stone-950"] { background-color: #f1f4f2; }
+html.light [class*="bg-stone-900"] { background-color: #ffffff; }
+html.light [class*="bg-stone-800"] { background-color: #e7eeea; }
+html.light [class*="bg-stone-700"] { background-color: #d6e1db; }
+html.light [class*="border-stone-800"] { border-color: #d6e1db; }
+html.light [class*="border-stone-700"] { border-color: #c5d3ca; }
+html.light [class*="text-stone-100"] { color: #23312d; }
+html.light [class*="text-stone-200"] { color: #33443e; }
+html.light [class*="text-stone-300"] { color: #465951; }
+html.light [class*="text-stone-400"] { color: #60716a; }
+html.light [class*="text-stone-500"] { color: #71837b; }
+html.light [class*="text-stone-600"] { color: #84958d; }
+html.light [class*="placeholder:text-stone-600"]::placeholder { color: #84958d; }
+html.light [class*="hover:bg-stone-800"]:hover { background-color: #e7eeea; }
+html.light [class*="hover:bg-stone-700"]:hover { background-color: #d6e1db; }
+html.light [class*="focus:ring-offset-stone-950"]:focus { --tw-ring-offset-color: #f1f4f2; }
+html.light [class*="bg-sage-950"] { background-color: #e4f0e9; }
+html.light [class*="border-sage-700"] { border-color: #a8c5b4; }
+html.light [class*="bg-sage-600"] { background-color: #287052; color: #ffffff; }
+html.light [class*="hover:bg-sage-500"]:hover { background-color: #1f6046; color: #ffffff; }
+html.light [class*="active:bg-sage-700"]:active { background-color: #194d38; color: #ffffff; }
+html.light [class*="bg-red-900"] { background-color: #a63b3b; color: #ffffff; }
+html.light [class*="hover:bg-red-900"]:hover { background-color: #8f3030; color: #ffffff; }
+html.light [class*="active:bg-red-950"]:active { background-color: #762727; color: #ffffff; }
+html.light [class*="text-white"] { color: #ffffff; }

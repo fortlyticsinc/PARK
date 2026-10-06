@@ -1,0 +1,53 @@
+# Environment files and local secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Node and frontend build output
+node_modules/
+dist/
+.vite/
+.next/
+.turbo/
+*.tsbuildinfo
+
+# User uploads and runtime files
+backend/uploads/**
+backend/app/uploads/**
+uploads/**
+!backend/uploads/.gitkeep
+!backend/app/uploads/.gitkeep
+!uploads/.gitkeep
+*.log
+celerybeat-schedule
+
+# Local archives and operating-system files
+*.zip
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local editor state
+.vscode-test/
