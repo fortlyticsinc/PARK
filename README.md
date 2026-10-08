@@ -91,7 +91,7 @@ cd backend
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
-uvicorn app.main:app --reload
+uvicorn backend.app.main:app --reload --app-dir ..
 ```
 
 Run a Celery worker alongside the API for user bulk imports:

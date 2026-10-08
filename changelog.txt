@@ -5,3 +5,24 @@ Readups
 -RLS
 -IDOR
 -JWT
+-Redis
+
+
+
+ENV=production
+DATABASE_URL="postgresql+asyncpg://postgres.rsikzaugaqqkmuimvfji:+8926Lahairpark@aws-0-eu-west-1.pooler.supabase.com:5432/postgres"
+SUPABASE_URL=https://rsikzaugaqqkmuimvfji.supabase.co
+SUPABASE_ANON_KEY=sb_publishable_DuxYqIVUQwy7d5gPv0tsIw_NVjG1iPG
+SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJzaWt6YXVnYXFxa211aW12ZmppIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3ODQ5NTU5NSwiZXhwIjoyMDk0MDcxNTk1fQ.dNjCX8xdb3eOAi8WjUcC5KGRSbuhTd7XyLqSiA4dDzc
+JWT_SECRET=hf9824938@+jfjwn2u83#^@9insds_=yenoo$3n29dnfsfkslnlsjdnefowi
+REDIS_URL=redis-cli --tls -u redis://default:gQAAAAAAAyWSAAIgcDJjZmNkMzQzOWQ4MTM0MDA2YThkNWRiY2EwZTFlNDgwOA@tops-reptile-206226.upstash.io:6379
+CLOUDINARY_CLOUD_NAME=dhxbfhqsr
+CLOUDINARY_API_KEY=124731559178933
+CLOUDINARY_API_SECRET=eq3WmTmP7Kuzxb80FKu5Idx39f0
+BREVO_API_KEY=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
+BREVO_SENDER_EMAIL=schoolofcomputingfpo@gmail.com
+BREVO_SENDER_NAME=PARK
+FRONTEND_URL=https://<your-frontend-domain>
+API_BASE_URL=https://<your-api-domain>
+CORS_ORIGINS=https://<your-frontend-domain>
+ALLOWED_HOSTS=<your-api-domain>,<render-service-hostname>
